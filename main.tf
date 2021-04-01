@@ -11,6 +11,24 @@ terraform {
     }
   }
 }
+#############################################################################
+# VARIABLES
+#############################################################################
+
+variable "region" {
+  type        = string
+  description = "Région de déploiement"
+  default     = "ca-central-1"
+}
+
+variable "aws_access_key" {
+  type        = string
+}
+
+variable "aws_secret_key" {
+  type        = string
+}
+
 
 #############################################################################
 # PROVIDERS
