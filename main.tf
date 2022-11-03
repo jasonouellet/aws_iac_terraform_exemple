@@ -22,11 +22,11 @@ variable "region" {
 }
 
 variable "aws_access_key" {
-  type        = string
+  type = string
 }
 
 variable "aws_secret_key" {
-  type        = string
+  type = string
 }
 
 
@@ -59,7 +59,7 @@ backend "remote" {
 #############################################################################
 # EXEMPLE - RANDOM
 #############################################################################
- 
+
 resource "random_id" "exemple" {
   byte_length = 8
 }
